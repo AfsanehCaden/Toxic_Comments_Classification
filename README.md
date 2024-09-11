@@ -24,23 +24,23 @@ The primary problem in this project is the pervasive issue of toxic comments on 
      •	Used techniques like tokenization and handled class imbalances through oversampling, as we had a very high-class imbalance. 
      
 # • Model Selection and Training:
-•	Tested various pre-trained Large Language Models for the task, like BERT, Roberta, and DistilBERT. 
-•	Selected the DistilBERT model for its balance between performance and computational efficiency.
-•	Fine-tuned the DistilBERT model on the dataset to optimize it for the classification task.
+     •	Tested various pre-trained Large Language Models for the task, like BERT, Roberta, and DistilBERT. 
+     •	Selected the DistilBERT model for its balance between performance and computational efficiency.
+     •	Fine-tuned the DistilBERT model on the dataset to optimize it for the classification task.
 
 # • Training Process:
-•	Implemented cross-validation to ensure the model’s robustness and generalizability.
-•	Used the FocalLoss function to handle class imbalances and improve the model’s performance on less frequent classes.
-•	Employed the ADAMW optimizer and the ReduceLROnPlateau scheduler to adjust the learning rate based on the validation loss, helping to prevent overfitting.
-•	Utilized Google Colab with GPU acceleration to efficiently run and fine-tune the DistilBERT model, enabling faster training and evaluation processes.
+     •	Implemented cross-validation to ensure the model’s robustness and generalizability.
+     •	Used the FocalLoss function to handle class imbalances and improve the model’s performance on less frequent classes.
+     •	Employed the ADAMW optimizer and the ReduceLROnPlateau scheduler to adjust the learning rate based on the validation loss, helping to prevent overfitting.
+     •	Utilized Google Colab with GPU acceleration to efficiently run and fine-tune the DistilBERT model, enabling faster training and evaluation processes.
 
 # • Evaluation:
-•	Evaluated the model using the mean column-wise ROC AUC metric.
-•	Achieved an AUC-ROC score of 98%, indicating a high level of accuracy in predicting the probabilities for each type of toxicity.
+     •	Evaluated the model using the mean column-wise ROC AUC metric.
+     •	Achieved an AUC-ROC score of 98%, indicating a high level of accuracy in predicting the probabilities for each type of toxicity.
 
 # Results
-1.	Performance:
-o	The DistilBERT model outperformed other models tested, achieving a high AUC-ROC score of 98%.
-o	This performance indicates that the model can effectively detect toxic comments, improving the current Perspective API models.
-2.	Impact:
-o	The model can help online platforms manage toxic comments better and tailor their moderation strategies to address the most harmful behaviors without overly restricting free expression. And they can foster more productive and respectful online discussions.
+     1.	Performance:
+          o	The DistilBERT model outperformed other models tested, achieving a high AUC-ROC score of 98%.
+          o	This performance indicates that the model can effectively detect toxic comments, improving the current Perspective API models.
+     2.	Impact:
+          o	The model can help online platforms manage toxic comments better and tailor their moderation strategies to address the most harmful behaviors without overly restricting free expression. And they can foster more productive and respectful online discussions.
