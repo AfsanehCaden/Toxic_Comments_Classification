@@ -10,9 +10,9 @@ The primary problem in this project is the pervasive issue of toxic comments on 
 # • Data Preparation:
      •	Preprocessed the dataset to clean and prepare the text for model training.
      •	Cleaning the texts 
-o	Remove HTML tags 
-o	Replace URLs with a special token
-o	Replace email addresses with a special token
+          o Remove HTML tags 
+          o Replace URLs with a special token
+          o Replace email addresses with a special token
 o	Convert text to lowercase
 o	Remove stop words
 o	Remove punctuation
