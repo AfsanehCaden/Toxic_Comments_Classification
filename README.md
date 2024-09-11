@@ -7,9 +7,9 @@ Leveraging large language models (LLMs) to classify and detect various types of 
 The primary problem in this project is the pervasive issue of toxic comments on online platforms like Wikipedia’s talk page edits, which can include rude, disrespectful, or harmful that discourage participation and stifle open discussion. Suppose the models are not sufficiently accurate and cannot differentiate between specific types of toxicity, such as threats, obscenity, insults, and identity-based hate. In that case, many online communities are forced to limit or shut down user comments to manage negative behaviors, ultimately hindering productive and respectful online conversations. The challenge is to develop a more accurate and proficient multi-headed classification to detect better and categorize these toxic comments on Wikipedia platforms' talk pages, thereby enhancing the quality of online interactions.
 
 # SOLUTION
- # • Data Preparation:
-•	Preprocessed the dataset to clean and prepare the text for model training.
-•	Cleaning the texts 
+# • Data Preparation:
+     •	Preprocessed the dataset to clean and prepare the text for model training.
+     •	Cleaning the texts 
 o	Remove HTML tags 
 o	Replace URLs with a special token
 o	Replace email addresses with a special token
